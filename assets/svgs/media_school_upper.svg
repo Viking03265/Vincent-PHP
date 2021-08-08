@@ -1,0 +1,23 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 150" width="110" height="150">
+	<title>Group 140-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #f2f2f2;stroke-width: 6 } 
+		.shp1 { fill: none;stroke: #ade8e6;stroke-width: 6 } 
+		.shp2 { fill: none;stroke: #ade8e6;stroke-width: 10 } 
+		.shp3 { fill: none;stroke: #f2f2f2;stroke-width: 20 } 
+		.shp4 { fill: #ade8e6 } 
+	</style>
+	<g id="Education Portal – 4">
+		<g id="Group 152">
+			<g id="Group 140">
+				<path id="Ellipse 14" class="shp0" d="M83.15 43.62C76.46 43.62 71.06 38.21 71.06 31.52C71.06 24.83 76.46 19.42 83.15 19.42C89.84 19.42 95.25 24.83 95.25 31.52C95.25 38.21 89.84 43.62 83.15 43.62Z" />
+				<path id="Ellipse 15" class="shp1" d="M43.2 95.59C39.21 90.29 40.26 82.79 45.56 78.8C50.85 74.81 58.36 75.86 62.35 81.16C66.34 86.45 65.29 93.96 59.99 97.95C54.69 101.94 47.19 100.89 43.2 95.59Z" />
+				<path id="Ellipse 17" class="shp2" d="M50.37 111.36C50.37 100.74 58.95 92.16 69.57 92.16C80.18 92.16 88.76 100.74 88.76 111.36C88.76 121.97 80.18 130.55 69.57 130.55C58.95 130.55 50.37 121.97 50.37 111.36Z" />
+				<path id="Ellipse 18" class="shp3" d="M14.38 111.36C14.38 100.74 22.96 92.16 33.58 92.16C44.19 92.16 52.77 100.74 52.77 111.36C52.77 121.97 44.19 130.55 33.58 130.55C22.96 130.55 14.38 121.97 14.38 111.36Z" />
+				<path id="Ellipse 16" class="shp0" d="M78.69 95.78C75.7 91.81 76.49 86.18 80.46 83.19C84.43 80.2 90.06 80.99 93.05 84.96C96.05 88.93 95.26 94.56 91.28 97.55C87.31 100.55 81.68 99.76 78.69 95.78Z" />
+				<path id="Rectangle 140" class="shp4" d="M58.25 40.81L93.78 46.43L88.31 80.98L52.77 75.35L58.25 40.81Z" />
+			</g>
+		</g>
+	</g>
+</svg>

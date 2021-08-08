@@ -1,0 +1,19 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 77" width="112" height="77">
+	<title>Education Portal – 4</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #613794 } 
+		.shp1 { fill: #7d58af } 
+	</style>
+	<g id="Education Portal – 4">
+		<g id="Group 157">
+			<g id="Group 143">
+				<path id="Rectangle 155" class="shp0" d="M75 39L112 39L112 57C112 68.05 103.05 77 92 77L75 77L75 39Z" />
+				<path id="Rectangle 156" class="shp1" d="M37 44C37 32.95 45.95 24 57 24L75 24L75 77L37 77L37 44Z" />
+				<path id="Rectangle 157" class="shp0" d="M0 39L17 39C28.05 39 37 47.95 37 59L37 77L0 77L0 39Z" />
+				<path id="Ellipse 21" class="shp0" d="M93.5 40C83.27 40 75 31.28 75 20.5C75 9.72 83.27 1 93.5 1C103.73 1 112 9.72 112 20.5C112 31.28 103.73 40 93.5 40Z" />
+				<path id="Path 1471" class="shp1" d="M104.56 35.34L76.53 11.86C76.53 11.86 70.54 27.43 82.76 35.34C94.97 43.24 104.56 35.34 104.56 35.34Z" />
+			</g>
+		</g>
+	</g>
+</svg>

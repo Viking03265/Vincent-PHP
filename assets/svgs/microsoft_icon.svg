@@ -1,0 +1,20 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 35" width="34" height="35">
+	<title>Education Portal – 4</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #4caf50 } 
+		.shp1 { fill: #f44336 } 
+		.shp2 { fill: #2196f3 } 
+		.shp3 { fill: #ffc107 } 
+	</style>
+	<g id="Education Portal – 4">
+		<g id="Group 153">
+			<g id="microsoft (1)">
+				<path id="Path 1475" class="shp0" d="M18.04 16.44L33.69 16.44L33.69 1.84C33.69 1.27 33.22 0.8 32.64 0.8L18.04 0.8L18.04 16.44Z" />
+				<path id="Path 1476" class="shp1" d="M15.96 16.44L15.96 0.8L1.36 0.8C0.78 0.8 0.31 1.27 0.31 1.84L0.31 16.44L15.96 16.44Z" />
+				<path id="Path 1477" class="shp2" d="M15.96 18.53L0.31 18.53L0.31 33.13C0.31 33.7 0.78 34.17 1.36 34.17L15.96 34.17L15.96 18.53Z" />
+				<path id="Path 1478" class="shp3" d="M18.04 18.53L18.04 34.17L32.64 34.17C33.22 34.17 33.69 33.7 33.69 33.13L33.69 18.53L18.04 18.53Z" />
+			</g>
+		</g>
+	</g>
+</svg>
