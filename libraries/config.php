@@ -1,6 +1,6 @@
 <?php
 
-$db_config = [
+$db_config = (object) [
     'hostname' => 'localhost',
     'username' => 'root',
     'password' => 'rootroot',

@@ -62,32 +62,35 @@
     // console.log("Document is ready!");
   });
 
+
   $('#popup').on('hidden.bs.modal', () => {
-    console.log("Popup is closing now!");
+
     if (popup_choice === 0) {
       $('#popup').modal({backdrop: 'static', keyboard: false});
+      return;
     }
 
     $.ajax({
-      url: "/views/Home/popup.php",
+      url: "views/Home/popup.php",
       method: 'POST',
       data: {
-        option1: $('#popup #one').val(),
-        option2: $('#popup #two').val(),
-        option3: $('#popup #three').val(),
+        option1: $('#popup #one').prop('checked') ? 1 : 0,
+        option2: $('#popup #two').prop('checked') ? 1 : 0,
+        option3: $('#popup #three').prop('checked') ? 1 : 0,
         choice: popup_choice - 1
       },
       success: data => {
         console.log("popup submition succeeded!" + data);
       },
       statusCode: {
-        404: () => { console.log( "popup failed to submit: 404! page not found." ); }
+        404: () => { $('#popup').modal({backdrop: 'static', keyboard: false}); }
       }
-    }).done(function() {
-      $( this ).addClass( "done" );
     });
+
     popup_choice = 0;
+
   });
+
 
   $(document).on('click', '#popup .btn-accept', e => {
     popup_choice = 2;

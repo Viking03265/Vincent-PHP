@@ -1,18 +1,26 @@
 <?php
+
+    require_once (__DIR__ . '\\..\\..\\libraries\\config.php');
     require_once (__DIR__ . '\\..\\..\\libraries\\database.php');
 
     if (isset($_POST['choice'])) {
-        $db = new DataBase();
 
+        $db = new DataBase(
+            $db_config->hostname,
+            $db_config->username,
+            $db_config->password,
+            $db_config->database
+        );
+                
         $choices = [
-            'option1': $_POST['option1'],
-            'option2': $_POST['option2'],
-            'option3': $_POST['option3'],
-            'choice': $_POST['choice'],
-        ]
+            'option1' => strval($_POST['option1']),
+            'option2' => strval($_POST['option2']),
+            'option3' => strval($_POST['option3']),
+            'choice'  => strval($_POST['choice']),
+        ];
 
-        $db->saveChoices($choices);
-    }
+        return $db->saveChoices($choices);
+    } 
 
 ?>
 
