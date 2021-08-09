@@ -1,5 +1,5 @@
 <?php
-    include ('..\\..\\libraries\\database.php');
+    require_once (__DIR__ . '\\..\\..\\libraries\\database.php');
 
     if (isset($_POST['choice'])) {
         $db = new DataBase();
