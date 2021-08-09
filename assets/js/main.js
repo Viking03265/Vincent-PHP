@@ -71,8 +71,14 @@
     $.ajax({
       url: "/views/Home/popup.php",
       method: 'POST',
+      data: {
+        option1: $('#popup #one').val(),
+        option2: $('#popup #two').val(),
+        option3: $('#popup #three').val(),
+        choice: popup_choice - 1
+      },
       success: data => {
-        console.log("popup submition succeeded!");
+        console.log("popup submition succeeded!" + data);
       },
       statusCode: {
         404: () => { console.log( "popup failed to submit: 404! page not found." ); }
@@ -84,12 +90,12 @@
   });
 
   $(document).on('click', '#popup .btn-accept', e => {
-    popup_choice = 1;
+    popup_choice = 2;
     $('#popup').modal('hide');
   });
 
   $(document).on('click', '#popup .btn-decline', e => {
-    popup_choice = 2;
+    popup_choice = 1;
     $('#popup').modal('hide');
   });
 

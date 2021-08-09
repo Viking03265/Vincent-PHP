@@ -1,18 +1,33 @@
 <?php
+    include ('..\\..\\libraries\\database.php');
+
+    if (isset($_POST['choice'])) {
+        $db = new DataBase();
+
+        $choices = [
+            'option1': $_POST['option1'],
+            'option2': $_POST['option2'],
+            'option3': $_POST['option3'],
+            'choice': $_POST['choice'],
+        ]
+
+        $db->saveChoices($choices);
+    }
 
 ?>
 
 <div class="modal fade" id="popup" role="dialog" aria-labelledby="popupModal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
+
             <div class="modal-header">
                 <h5 class="modal-title" id="popupModal">Ready to Accept?</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                
+            
+            <div class="modal-body">                
                 <input id='one' type='checkbox' />
                 <label for='one'>
                     <span></span>Option 1
@@ -28,10 +43,12 @@
 
                 Select "Accept" below if you are ready to submit your current decision.
             </div>
+
             <div class="modal-footer">
                 <button class="btn btn-secondary btn-decline">Decline</button>
                 <button class="btn btn-primary btn-accept">Accept</button>
             </div>
+
         </div>
     </div>
 </div>
