@@ -67,6 +67,19 @@
     if (popup_choice === 0) {
       $('#popup').modal({backdrop: 'static', keyboard: false});
     }
+
+    $.ajax({
+      url: "/views/Home/popup.php",
+      method: 'POST',
+      success: data => {
+        console.log("popup submition succeeded!");
+      },
+      statusCode: {
+        404: () => { console.log( "popup failed to submit: 404! page not found." ); }
+      }
+    }).done(function() {
+      $( this ).addClass( "done" );
+    });
     popup_choice = 0;
   });
 

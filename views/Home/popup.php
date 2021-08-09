@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <div class="modal fade" id="popup" role="dialog" aria-labelledby="popupModal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
