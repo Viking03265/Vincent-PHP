@@ -1,6 +1,8 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  var popup_choice = 0;
+
   // Toggle the side navigation
   $("#sidebarToggle, #sidebarToggleTop").on('click', function(e) {
     $("body").toggleClass("sidebar-toggled");
@@ -47,7 +49,7 @@
   });
 
   // Smooth scrolling using jQuery easing
-  $(document).on('click', 'a.scroll-to-top', function(e) {
+  $(document).on('click', 'a.scroll-to-top', (e) => {
     var $anchor = $(this);
     $('html, body').stop().animate({
       scrollTop: ($($anchor.attr('href')).offset().top)
@@ -55,4 +57,27 @@
     e.preventDefault();
   });
 
-})(jQuery); // End of use strict
+  $(document).ready(() => {
+    $('#popup').modal({backdrop: 'static', keyboard: false});
+    // console.log("Document is ready!");
+  });
+
+  $('#popup').on('hidden.bs.modal', () => {
+    console.log("Popup is closing now!");
+    if (popup_choice === 0) {
+      $('#popup').modal({backdrop: 'static', keyboard: false});
+    }
+    popup_choice = 0;
+  });
+
+  $(document).on('click', '#popup .btn-accept', e => {
+    popup_choice = 1;
+    $('#popup').modal('hide');
+  });
+
+  $(document).on('click', '#popup .btn-decline', e => {
+    popup_choice = 2;
+    $('#popup').modal('hide');
+  });
+
+ })(jQuery); // End of use strict
