@@ -1,5 +1,7 @@
 <?php
 
+include ('config.php');
+
 function base_url() {
     return sprintf(
         "%s://%s%s",
@@ -12,4 +14,9 @@ function base_url() {
 function asset_url($asset = '') {
     return base_url() . 'assets/' . $asset;
 }
+
+function db_connect() {
+    return new mysqli($db_config->hostname, $db_config->username, $db_config->password, $db_config->database);
+}
+
 ?>
