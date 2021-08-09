@@ -16,7 +16,7 @@
             'option1' => strval($_POST['option1']),
             'option2' => strval($_POST['option2']),
             'option3' => strval($_POST['option3']),
-            'choice'  => strval($_POST['choice']),
+            'choice'  => strval($_POST['choice'])
         ];
 
         return $db->saveChoices($choices);
