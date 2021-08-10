@@ -35,7 +35,15 @@
                 </button>
             </div>
             
-            <div class="modal-body">                
+            <div class="modal-body">  
+                <p> This email address is very important with your decision.</p>
+                <div class="form-group row">          
+                    <label class="col-lg-2" for='email'>
+                        <span>Email</span>
+                    </label>            
+                    <input class="form-control col-lg-9" id='email' type='text' placeholder="Input your E-mail address"/>  
+                </div>
+
                 <input id='one' type='checkbox' />
                 <label for='one'>
                     <span></span>Option 1
@@ -49,7 +57,7 @@
                     <span></span>Option 3
                 </label>
 
-                Select "Accept" below if you are ready to submit your current decision.
+                <p>Select "Accept" below if you are ready to submit your current decision.</p>
             </div>
 
             <div class="modal-footer">
